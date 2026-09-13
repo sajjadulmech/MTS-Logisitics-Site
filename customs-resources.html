@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incoterms 2020 Rules Guide | MTS Logistics Bangladesh</title>
+  <meta name="description" content="Practical guide to all 11 Incoterms 2020 rules for Bangladesh importers and exporters. Free MTS Trade Rules Handbook and customs documentation reference.">
+  <link rel="canonical" href="https://www.mts-world.com/customs-resources.html">
+  <meta property="og:title" content="Incoterms 2020 Rules Guide | MTS Logistics Bangladesh">
+  <meta property="og:description" content="Practical guide to all 11 Incoterms 2020 rules for Bangladesh importers and exporters. Free MTS Trade Rules Handbook and customs documentation reference.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MTS Logistics Ltd.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://www.mts-world.com/customs-resources.html">
+  <meta property="og:image" content="https://www.mts-world.com/assets/images/handshake.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Incoterms 2020 Rules Guide | MTS Logistics Bangladesh">
+  <meta name="twitter:description" content="Practical guide to all 11 Incoterms 2020 rules for Bangladesh importers and exporters. Free MTS Trade Rules Handbook and customs documentation reference.">
+  <meta name="twitter:image" content="https://www.mts-world.com/assets/images/handshake.webp">
+  <meta name="theme-color" content="#003366">
+  <link rel="icon" href="favicon.ico?v=20260801" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260801">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20260801">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png?v=20260801">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260801">
+  <link rel="manifest" href="manifest.json?v=20260801">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- Decorative icons only (all aria-hidden). Self-hosted 13-glyph subset —
+       no external request, works offline. See assets/css/icons.css. -->
+  <link rel="stylesheet" href="assets/css/icons.css">
+
+  <!-- Resources page — Incoterms 2020 PDF library.
+       Scoped styles, built on the site's existing button / card system and colour tokens. -->
+  <style>
+    /* Two small action buttons above the viewer */
+    .pdf-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; margin-bottom: 22px; }
+
+    .btn-mini {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 11px 22px; border-radius: 999px;
+      border: 1px solid var(--border-strong); background: var(--white);
+      font-family: var(--font-head); font-weight: 600; font-size: 13.5px;
+      color: var(--navy); text-decoration: none;
+      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    }
+    .btn-mini:hover { background: var(--navy); color: #ffffff; border-color: var(--navy); transform: translateY(-1px); }
+    .btn-mini i { font-size: 12.5px; }
+    .btn-mini--solid { background: var(--navy); color: #ffffff; border-color: var(--navy); }
+    .btn-mini--solid:hover { background: var(--orange); border-color: var(--orange); color: #ffffff; }
+
+    /* Responsive PDF viewer shell — matches the site's rounded card treatment */
+    .pdf-shell {
+      height: 940px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 51, 102, 0.08);
+    }
+    .pdf-frame { width: 100%; height: 100%; border: 0; display: block; }
+    .pdf-hint { margin: 18px 0 0; text-align: center; font-size: 13.5px; line-height: 1.6; color: var(--muted); }
+
+    @media (max-width: 900px) {
+      .pdf-actions { justify-content: flex-start; }
+      .pdf-shell { height: 700px; }
+    }
+    @media (max-width: 640px) {
+      .pdf-shell { height: 76vh; min-height: 460px; border-radius: 14px; }
+    }
+
+    /* Basic Incoterms at a Glance — light ash quick-reference cards */
+    .inco-grid { display: grid; gap: 20px; grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 1080px) { .inco-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 760px)  { .inco-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px)  { .inco-grid { grid-template-columns: 1fr; } }
+
+    .inco-card {
+      display: flex; flex-direction: column; height: 100%;
+      padding: 24px 22px;
+      background: #f5f6f8;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 51, 102, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .inco-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0, 51, 102, 0.1); border-color: var(--border-strong); }
+
+    .inco-ic {
+      width: 46px; height: 46px; border-radius: 12px; margin-bottom: 18px;
+      display: flex; align-items: center; justify-content: center;
+      background: #ffffff; border: 1px solid var(--border); color: var(--blue); font-size: 18px;
+    }
+    .inco-code { font-family: var(--font-head); font-weight: 700; font-size: 20px; letter-spacing: 0.04em; color: var(--navy); margin: 0 0 4px; }
+    .inco-name { font-family: var(--font-head); font-weight: 600; font-size: 13.5px; color: var(--blue); margin: 0 0 12px; }
+    .inco-desc { flex: 1; font-size: 13.5px; line-height: 1.6; color: var(--muted); margin: 0 0 18px; text-wrap: pretty; }
+
+    .inco-badge {
+      align-self: flex-start; display: inline-flex; align-items: center; gap: 7px;
+      padding: 6px 12px; border-radius: 999px;
+      font-family: var(--font-head); font-weight: 600; font-size: 11.5px;
+    }
+    .inco-badge .dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+    .inco-badge--all { background: rgba(0, 94, 168, 0.08); color: var(--blue); }
+    .inco-badge--all .dot { background: var(--blue); }
+    .inco-badge--sea { background: #eef1f5; color: var(--navy); }
+    .inco-badge--sea .dot { background: var(--orange); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.mts-world.com/#organization",
+        "name": "MTS Logistics Ltd.",
+        "url": "https://www.mts-world.com/",
+        "logo": "https://www.mts-world.com/assets/images/logos/mts-logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.mts-world.com/#website",
+        "url": "https://www.mts-world.com/",
+        "name": "MTS Logistics Ltd.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://www.mts-world.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.mts-world.com/customs-resources.html#webpage",
+        "url": "https://www.mts-world.com/customs-resources.html",
+        "name": "Incoterms 2020 Rules Guide | MTS Logistics Bangladesh",
+        "description": "Practical guide to all 11 Incoterms 2020 rules for Bangladesh importers and exporters. Free MTS Trade Rules Handbook and customs documentation reference.",
+        "isPartOf": {
+          "@id": "https://www.mts-world.com/#website"
+        },
+        "about": {
+          "@id": "https://www.mts-world.com/#organization"
+        },
+        "primaryImageOfPage": "https://www.mts-world.com/assets/images/handshake.webp",
+        "inLanguage": "en",
+        "breadcrumb": {
+          "@id": "https://www.mts-world.com/customs-resources.html#breadcrumb"
+        },
+        "dateModified": "2026-09-03"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mts-world.com/customs-resources.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.mts-world.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "MTS Trade Rules Handbook",
+            "item": "https://www.mts-world.com/customs-resources.html"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://www.mts-world.com/customs-resources.html#incoterms",
+        "name": "Incoterms 2020",
+        "description": "The 11 Incoterms 2020 rules published by the International Chamber of Commerce.",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "termCode": "EXW",
+            "name": "Ex Works",
+            "description": "Seller makes goods available at their premises; the buyer handles all transport and clearance.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "FCA",
+            "name": "Free Carrier",
+            "description": "Seller delivers goods, cleared for export, to a carrier nominated by the buyer.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "CPT",
+            "name": "Carriage Paid To",
+            "description": "Seller pays carriage to the named destination; risk passes at the first carrier.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "CIP",
+            "name": "Carriage and Insurance Paid To",
+            "description": "Like CPT, but the seller also arranges insurance covering the goods to destination.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "DAP",
+            "name": "Delivered at Place",
+            "description": "Seller delivers when goods reach the named place, ready for unloading by the buyer.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "DPU",
+            "name": "Delivered at Place Unloaded",
+            "description": "Seller delivers and unloads the goods at the named place of destination.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "DDP",
+            "name": "Delivered Duty Paid",
+            "description": "Seller delivers goods cleared for import, bearing all costs and duties to destination.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "FAS",
+            "name": "Free Alongside Ship",
+            "description": "Seller delivers goods alongside the vessel at the named port of shipment.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "FOB",
+            "name": "Free On Board",
+            "description": "Seller delivers goods on board the vessel; risk passes once they are loaded.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "CFR",
+            "name": "Cost and Freight",
+            "description": "Seller pays cost and freight to the destination port; risk passes on loading.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "termCode": "CIF",
+            "name": "Cost, Insurance and Freight",
+            "description": "Like CFR, plus the seller provides marine insurance to the destination port.",
+            "inDefinedTermSet": {
+              "@id": "https://www.mts-world.com/customs-resources.html#incoterms"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="MTS Logistics home">
+        <img width="320" height="77" src="assets/images/logos/mts-logo-320.webp" srcset="assets/images/logos/mts-logo-320.webp 320w, assets/images/logos/mts-logo-480.webp 480w" sizes="135px" decoding="async" alt="MTS Logistics" class="brand-logo">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <div class="nav-links" id="primary-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="network.html" class="nav-link">Network</a>
+        <a href="customs-resources.html" class="nav-link active" aria-current="page">Resources</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="https://www.track-trace.com/" target="_blank" rel="noopener noreferrer" class="btn-track">Track &amp; Trace</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+  <section class="page-hero page-hero--flat" aria-label="MTS Trade Rules Handbook introduction">
+    <div class="page-hero-content page-hero-content--narrow">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current">MTS Trade Rules Handbook</span>
+      </nav>
+      <p class="page-hero-kicker">Resources</p>
+      <h1 class="page-hero-title page-hero-title--compact">MTS Trade Rules Handbook</h1>
+      <p class="page-hero-sub">Understanding Incoterms 2020 — a practical guide for importers, exporters and freight forwarders.</p>
+    </div>
+  </section>
+
+  <!-- PDF LIBRARY — the document itself is the resource.
+       To swap the PDF in future, replace the file below (or update the three
+       "assets/docs/mts-trade-rules-handbook.pdf" references: viewer, Open, Download). -->
+  <section class="section bg-white" aria-labelledby="pdf-title">
+    <div class="container" data-reveal>
+      <h2 id="pdf-title" class="visually-hidden">MTS Trade Rules Handbook document viewer</h2>
+      <div class="pdf-actions">
+        <a class="btn-mini" href="assets/docs/mts-trade-rules-handbook.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Open in New Tab
+        </a>
+        <a class="btn-mini btn-mini--solid" href="assets/docs/mts-trade-rules-handbook.pdf" download="MTS-Trade-Rules-Handbook.pdf">
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF
+        </a>
+      </div>
+      <div class="pdf-shell">
+        <iframe class="pdf-frame" src="assets/docs/mts-trade-rules-handbook.pdf#view=FitH" title="MTS Trade Rules Handbook — full document" loading="lazy"></iframe>
+      </div>
+      <p class="pdf-hint">Having trouble viewing the document on your device? Use &ldquo;Open in New Tab&rdquo; or &ldquo;Download PDF&rdquo; above.</p>
+    </div>
+  </section>
+
+  <!-- BASIC INCOTERMS AT A GLANCE — quick reference only, not a replacement for the PDF -->
+  <section class="section bg-white" aria-labelledby="glance-title">
+    <div class="container" data-reveal>
+      <div class="section-head">
+        <p class="kicker">Quick Reference</p>
+        <h2 id="glance-title" class="section-title">Basic Incoterms at a Glance</h2>
+        <p class="lead" style="font-size: 15px;">A quick overview of the 11 Incoterms 2020 rules.</p>
+      </div>
+      <div class="inco-grid">
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-warehouse"></i></span>
+          <h3 class="inco-code">EXW</h3>
+          <p class="inco-name">Ex Works</p>
+          <p class="inco-desc">Seller makes goods available at their premises; the buyer handles all transport and clearance.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-truck-ramp-box"></i></span>
+          <h3 class="inco-code">FCA</h3>
+          <p class="inco-name">Free Carrier</p>
+          <p class="inco-desc">Seller delivers goods, cleared for export, to a carrier nominated by the buyer.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-truck-fast"></i></span>
+          <h3 class="inco-code">CPT</h3>
+          <p class="inco-name">Carriage Paid To</p>
+          <p class="inco-desc">Seller pays carriage to the named destination; risk passes at the first carrier.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+          <h3 class="inco-code">CIP</h3>
+          <p class="inco-name">Carriage and Insurance Paid To</p>
+          <p class="inco-desc">Like CPT, but the seller also arranges insurance covering the goods to destination.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+          <h3 class="inco-code">DAP</h3>
+          <p class="inco-name">Delivered at Place</p>
+          <p class="inco-desc">Seller delivers when goods reach the named place, ready for unloading by the buyer.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-dolly"></i></span>
+          <h3 class="inco-code">DPU</h3>
+          <p class="inco-name">Delivered at Place Unloaded</p>
+          <p class="inco-desc">Seller delivers and unloads the goods at the named place of destination.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+          <h3 class="inco-code">DDP</h3>
+          <p class="inco-name">Delivered Duty Paid</p>
+          <p class="inco-desc">Seller delivers goods cleared for import, bearing all costs and duties to destination.</p>
+          <span class="inco-badge inco-badge--all"><span class="dot" aria-hidden="true"></span>All Transport Modes</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-anchor"></i></span>
+          <h3 class="inco-code">FAS</h3>
+          <p class="inco-name">Free Alongside Ship</p>
+          <p class="inco-desc">Seller delivers goods alongside the vessel at the named port of shipment.</p>
+          <span class="inco-badge inco-badge--sea"><span class="dot" aria-hidden="true"></span>Sea &amp; Inland Waterway</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-ship"></i></span>
+          <h3 class="inco-code">FOB</h3>
+          <p class="inco-name">Free On Board</p>
+          <p class="inco-desc">Seller delivers goods on board the vessel; risk passes once they are loaded.</p>
+          <span class="inco-badge inco-badge--sea"><span class="dot" aria-hidden="true"></span>Sea &amp; Inland Waterway</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-water"></i></span>
+          <h3 class="inco-code">CFR</h3>
+          <p class="inco-name">Cost and Freight</p>
+          <p class="inco-desc">Seller pays cost and freight to the destination port; risk passes on loading.</p>
+          <span class="inco-badge inco-badge--sea"><span class="dot" aria-hidden="true"></span>Sea &amp; Inland Waterway</span>
+        </article>
+
+        <article class="inco-card">
+          <span class="inco-ic" aria-hidden="true"><i class="fa-solid fa-umbrella"></i></span>
+          <h3 class="inco-code">CIF</h3>
+          <p class="inco-name">Cost, Insurance and Freight</p>
+          <p class="inco-desc">Like CFR, plus the seller provides marine insurance to the destination port.</p>
+          <span class="inco-badge inco-badge--sea"><span class="dot" aria-hidden="true"></span>Sea &amp; Inland Waterway</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section--cta bg-gradient">
+    <div class="cta-box" data-reveal>
+      <h2>Need expert guidance on international shipping?</h2>
+      <p>Our experienced logistics team can help you choose the right shipping solution for your business.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-accent">Contact Us</a>
+        <a href="services.html#customs" class="btn btn-ghost">Customs Services</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img width="320" height="77" src="assets/images/logos/mts-logo-320.webp" srcset="assets/images/logos/mts-logo-320.webp 320w, assets/images/logos/mts-logo-480.webp 480w" sizes="135px" decoding="async" loading="lazy" alt="MTS Logistics" class="footer-brand-logo">
+          </div>
+          <p class="footer-about">Multimodal transport &amp; logistics from the Bay of Bengal — personalized supply chain solutions delivered worldwide.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="industries.html">Industry Verticals</a>
+            <a href="network.html">Global Network</a>
+            <a href="customs-resources.html">Customs Resources</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://www.track-trace.com/" target="_blank" rel="noopener noreferrer">Track &amp; Trace</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Services</h3>
+          <div class="footer-links">
+            <a href="services.html#sea-freight">Sea Freight</a>
+            <a href="services.html#sea-air">Sea-Air Shipment</a>
+            <a href="services.html#air-freight">Air Freight</a>
+            <a href="services.html#customs">Customs Clearance</a>
+            <a href="services.html#warehousing">Warehousing &amp; Trucking</a>
+            <a href="services.html#project">Project Logistics</a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-heading">Contact</h3>
+          <p>NANDAN TULIP, Level 7<br>House #44, Road #07, Sector #03<br>Uttara, Dhaka-1230, Bangladesh</p>
+          <p><span class="ci-label">Telephone 1</span> : <a href="tel:+880241091222">+880 241091222</a><br><span class="ci-label">Telephone 2</span> : <a href="tel:+880241091223">+880 241091223</a><br><span class="ci-label">Mobile</span> : <a href="tel:+8801746990073">+880 1746990073</a><br><span class="ci-label">Email</span> : <a href="mailto:mts@mts-world.com">mts@mts-world.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2018 – <span id="current-year"></span> MTS Logistics Ltd. All rights reserved.</p>
+        <div class="footer-badges">
+          <img width="112" height="68" src="assets/images/logos/logo-sm-baffta-2x.webp" alt="BAFFA — Bangladesh Freight Forwarders Association" loading="lazy">
+          <img width="68" height="68" src="assets/images/logos/logo-sm-fmc-2x.webp" alt="U.S. Federal Maritime Commission" loading="lazy">
+          <img width="156" height="68" src="assets/images/logos/logo-sm-namfta-2x.webp" alt="NAMFTA — National Motor Freight Association Inc, USA" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
